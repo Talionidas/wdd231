@@ -1,0 +1,45 @@
+/* ---------- COLOR SCHEME -----------
+primary
+secondary
+*/
+
+/* ----------- Site Wide -----------*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------ Header -------------*/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: aquamarine;
+}
+
+
+/* ------------ Hamburger Navigation --------------*/
+.hamburger {
+    background: none;
+    border: none;
+    color: aquamarine;
+    cursor: pointer;
+}
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
