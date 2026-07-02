@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Thierry Stahl's WDD231 course home page.">
+    <meta name="author" content="Thierry Stahl">
+    <title>Thierry Stahl | WDD 231 Course Home</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
 <body>
 
     <header>
         <img src="images/home-button.svg" alt="Home" width="512" height="512">
         <span>Thierry's Site Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
 
         <ul>
-            <li><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="final/">Final</a></li>
         </ul>
 
     </nav>
+
     <main>
 
-        <h1>Dedicated Temples</h1>
+
+    <h1>Home</h1>
+
+        <section>
+            <h2>Course Work</h2>
+        </section>
+
+        <section>
+            <h2>Lucerne, Switzerland</h2>
+        </section>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+
+            <p id="credit-total"></p>
+
+            <div id="course-container"></div>
+        </section>
 
     </main>
+
     <footer>
 
         <div class="social">
@@ -39,11 +76,15 @@
             <a href="https://www.facebook.com/thierry.stahl.96/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"> </a>
             <a href="https://www.youtube.com/@TS123boss" target="_blank"><img src="images/youtube.svg" alt="Youtube" width="16" height="16"> </a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>last modified</p>
+        <p>
+        © <span id="currentyear"></span>
+        Thierry Stahl
+        Switzerland
+        </p>
+
+        <p id="lastModified"></p>
 
     </footer>
-    <script src="scripts/navigation.js"></script>
     
 </body>
 </html>

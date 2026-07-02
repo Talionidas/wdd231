@@ -1,4 +1,4 @@
-@media only screen and (mind-width: 38rem) {
+@media only screen and (min-width: 38rem) {
 
     header, main, nav, footer {
         max-width: 900px;

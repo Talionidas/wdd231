@@ -6,14 +6,14 @@ secondary
 /* ----------- Site Wide -----------*/
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 /* ------------ Header -------------*/
 header{
     display: grid;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: 50px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
@@ -111,4 +111,44 @@ footer{
 }
 .social a:hover {
     background-color: #ddd;
+}
+
+
+/* ------------ Course --------------*/
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.filters button {
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+}
+
+#credit-total {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.course-card {
+    background: #e5e5e5;
+    border: 1px solid #999;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+.completed {
+    background: aqua;
+    color: white;
 }
