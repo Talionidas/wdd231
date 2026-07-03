@@ -111,11 +111,26 @@ function displayCourses(courseList) {
 
 displayCourses(courses);
 
+function setActive(buttonId) {
+
+    document.querySelectorAll(".filters button").forEach(button => {
+        button.classList.remove("active");
+    });
+
+    document.querySelector(buttonId).classList.add("active");
+
+}
+
 document.querySelector("#all").addEventListener("click", () => {
+
+    setActive("#all");
     displayCourses(courses);
+
 });
 
 document.querySelector("#wdd").addEventListener("click", () => {
+
+    setActive("#wdd");
 
     const filteredCourses = courses.filter(course => course.subject === "WDD");
 
@@ -124,6 +139,8 @@ document.querySelector("#wdd").addEventListener("click", () => {
 });
 
 document.querySelector("#cse").addEventListener("click", () => {
+
+    setActive("#cse");
 
     const filteredCourses = courses.filter(course => course.subject === "CSE");
 
