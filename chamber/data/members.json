@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Lenzburg Bakery",
+        "address": "Rathausgasse 12, 5600 Lenzburg",
+        "phone": "+41 62 891 12 34",
+        "website": "https://www.example.com",
+        "image": "bakery.webp",
+        "membership": 3,
+        "tagline": "Fresh bread and pastries every day."
+    },
+    {
+        "name": "Hotel Lenzburg",
+        "address": "Bahnhofstrasse 5, 5600 Lenzburg",
+        "phone": "+41 62 891 23 45",
+        "website": "https://www.example.com",
+        "image": "hotel.webp",
+        "membership": 2,
+        "tagline": "Comfortable accommodation in the heart of Lenzburg."
+    },
+    {
+        "name": "Lenzburg Fitness",
+        "address": "Aavorstadt 8, 5600 Lenzburg",
+        "phone": "+41 62 891 34 56",
+        "website": "https://www.example.com",
+        "image": "fitness.webp",
+        "membership": 1,
+        "tagline": "Helping our community stay healthy."
+    },
+    {
+        "name": "Tech Solutions AG",
+        "address": "Industriestrasse 15, 5600 Lenzburg",
+        "phone": "+41 62 891 45 67",
+        "website": "https://www.example.com",
+        "image": "tech.webp",
+        "membership": 3,
+        "tagline": "Modern IT solutions for local businesses."
+    },
+    {
+        "name": "Lenzburg Florist",
+        "address": "Marktgasse 3, 5600 Lenzburg",
+        "phone": "+41 62 891 56 78",
+        "website": "https://www.example.com",
+        "image": "flowers.webp",
+        "membership": 2,
+        "tagline": "Beautiful flowers for every occasion."
+    },
+    {
+        "name": "Swiss Auto Garage",
+        "address": "Werkhofstrasse 20, 5600 Lenzburg",
+        "phone": "+41 62 891 67 89",
+        "website": "https://www.example.com",
+        "image": "garage.webp",
+        "membership": 1,
+        "tagline": "Reliable vehicle repairs and servicing."
+    },
+    {
+        "name": "Lenzburg Bookstore",
+        "address": "Kirchgasse 7, 5600 Lenzburg",
+        "phone": "+41 62 891 78 90",
+        "website": "https://www.example.com",
+        "image": "books.webp",
+        "membership": 2,
+        "tagline": "Books, gifts, and stationery."
+    }
+]

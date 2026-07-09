@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory | Lenzburger Chamber of Commerce</title>
+
+    <meta name="description" content="Business directory for the Lenzburger Chamber of Commerce featuring local businesses, organizations, and services in Lenzburg, Switzerland.">
+    <meta name="author" content="Thierry Stahl">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lenzburger Chamber of Commerce">
+    <meta property="og:description" content="Explore businesses and organizations that are members of the Lenzburger Chamber of Commerce.">
+    <meta property="og:image" content="https://talionidas.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://talionidas.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="images/logo.svg" alt="Lenzburger Chamber of Commerce Logo" width="50" height="50">
+    <span>Lenzburger Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation"></button>
+
+</header>
+
+<nav id="nav-bar" class="navigation">
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li class="current"><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+    </ul>
+
+</nav>
+
+<main>
+
+    <h1>Directory</h1>
+
+    <div class="view-buttons">
+
+        <button id="grid">Grid</button>
+
+        <button id="list">List</button>
+
+    </div>
+
+    <section id="members" class="grid-view">
+
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="contact">
+
+        <h3>Lenzburger Chamber of Commerce</h3>
+        <p>Example Street 1</p>
+        <p>5600 Lenzburg, Switzerland</p>
+        <p>contact@Lenzburgerchamber.example</p>
+        <p>+41 12 345 6789</p>
+
+    </div>
+
+    <div class="social">
+
+        <a href="https://www.linkedin.com/in/thierry-stahl-703851213/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/Talionidas" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+        <a href="https://www.facebook.com/thierry.stahl.96/" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@TS123boss" target="_blank"><img src="images/youtube.svg" alt="YouTube"></a>
+
+    </div>
+
+    <div class="development">
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Thierry Stahl |
+            WDD 231
+        </p>
+
+        <p id="lastModified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
