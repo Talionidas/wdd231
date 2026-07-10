@@ -1,65 +1,72 @@
 [
     {
-        "name": "Lenzburg Bakery",
-        "address": "Rathausgasse 12, 5600 Lenzburg",
-        "phone": "+41 62 891 12 34",
-        "website": "https://www.example.com",
-        "image": "bakery.webp",
+        "name": "Kita Pandachi",
+        "address": "Wylgasse 37, 5600 Lenzburg",
+        "phone": "+41 77 458 18 69",
+        "website": "https://www.kita-pandachi.ch/",
+        "image": "Kita_Pandachi.webp",
         "membership": 3,
-        "tagline": "Fresh bread and pastries every day."
+        "industry": "Education",
+        "tagline": "Safe haven for Children."
     },
     {
-        "name": "Hotel Lenzburg",
-        "address": "Bahnhofstrasse 5, 5600 Lenzburg",
-        "phone": "+41 62 891 23 45",
-        "website": "https://www.example.com",
-        "image": "hotel.webp",
+        "name": "Fenster Sanierungs AG",
+        "address": "Birren 17, 5703 Seon",
+        "phone": "+41 62 775 48 48",
+        "website": "https://fenstersanierungsag.ch/",
+        "image": "Fenster_Sanierung_AG.webp",
         "membership": 2,
-        "tagline": "Comfortable accommodation in the heart of Lenzburg."
+        "industry": "Construction",
+        "tagline": "A clean view to the World."
     },
     {
-        "name": "Lenzburg Fitness",
-        "address": "Aavorstadt 8, 5600 Lenzburg",
+        "name": "Flexo",
+        "address": "Hammermattstrasse 11, 5600 Lenzburg",
         "phone": "+41 62 891 34 56",
-        "website": "https://www.example.com",
-        "image": "fitness.webp",
+        "website": "https://aargau.flexo-handlauf.ch/",
+        "image": "Flexo.webp",
         "membership": 1,
-        "tagline": "Helping our community stay healthy."
+        "industry": "Construction",
+        "tagline": "Guiding what's precious."
     },
     {
-        "name": "Tech Solutions AG",
-        "address": "Industriestrasse 15, 5600 Lenzburg",
-        "phone": "+41 62 891 45 67",
-        "website": "https://www.example.com",
-        "image": "tech.webp",
+        "name": "Buchmann",
+        "address": "Rebhalde 1, 5503 Schafisheim",
+        "phone": "+41 79 318 13 76",
+        "website": "https://www.buchmann-hrservices.ch/",
+        "image": "Buchmann.webp",
         "membership": 3,
-        "tagline": "Modern IT solutions for local businesses."
+        "industry": "HR",
+        "tagline": "Helping you to find your place."
     },
     {
-        "name": "Lenzburg Florist",
-        "address": "Marktgasse 3, 5600 Lenzburg",
-        "phone": "+41 62 891 56 78",
-        "website": "https://www.example.com",
-        "image": "flowers.webp",
+        "name": "Seetal Tourismus",
+        "address": "Niederlenzerstrasse 25, 5600 Lenzburg",
+        "phone": "+41 41 920 45 29",
+        "website": "https://www.seetaltourismus.ch/de/",
+        "image": "Seetal_Tourismus.webp",
         "membership": 2,
-        "tagline": "Beautiful flowers for every occasion."
+        "industry": "Sales",
+        "tagline": "Discovering the Beauty of the Seetal."
     },
     {
-        "name": "Swiss Auto Garage",
-        "address": "Werkhofstrasse 20, 5600 Lenzburg",
-        "phone": "+41 62 891 67 89",
-        "website": "https://www.example.com",
-        "image": "garage.webp",
+        "name": "Kairos",
+        "address": "Dammweg 23, 5600 Lenzburg",
+        "phone": "+41 62 737 90 46",
+        "website": "https://kairos-schulen.ch/",
+        "image": "Kairos.webp",
         "membership": 1,
-        "tagline": "Reliable vehicle repairs and servicing."
+        "industry": "Education",
+        "tagline": "Building the Future."
     },
     {
-        "name": "Lenzburg Bookstore",
-        "address": "Kirchgasse 7, 5600 Lenzburg",
-        "phone": "+41 62 891 78 90",
-        "website": "https://www.example.com",
-        "image": "books.webp",
+        "name": "Balcony Bikes",
+        "address": "Kronenplatz 12, 5600 Lenzburg",
+        "phone": "+41 76 701 17 12",
+        "website": "https://www.balcony-bikes.com/",
+        "image": "Balcony_Bikes.webp",
         "membership": 2,
-        "tagline": "Books, gifts, and stationery."
+        "industry": "Sales",
+        "tagline": "Riding to the Future."
     }
 ]
