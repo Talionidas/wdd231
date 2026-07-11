@@ -23,18 +23,19 @@ function displayMembers(members) {
         const card = document.createElement("section");
 
         card.innerHTML = `
-    <img src="images/${member.image}" alt="${member.name} logo">
+            <img src="images/${member.image}" alt="${member.name} logo">
 
-    <div class="member-info">
-        <h2>${member.name}</h2>
-        <p><em>${member.tagline}</em></p>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <p><strong>Membership:</strong> ${membershipLevel(member.membership)}</p>
-        <p>
-            <a href="${member.website}" target="_blank" rel="noopener"> ${new URL(member.website).hostname}</a>
-        </p>
-    </div>
+            <div class="member-info">
+                <h2>${member.name}</h2>
+                <p><em>${member.tagline}</em></p>
+                <p><strong>Industry:</strong> ${member.industry}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Membership:</strong> ${membershipLevel(member.membership)}</p>
+                <p>
+                    <a href="${member.website}" target="_blank" rel="noopener"> ${new URL(member.website).hostname}</a>
+                </p>
+            </div>
 `;
 
         membersContainer.appendChild(card);
