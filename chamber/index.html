@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Directory | Lenzburger Chamber of Commerce</title>
+    <title>Home | Lenzburger Chamber of Commerce</title>
 
     <meta name="description" content="Business directory for the Lenzburger Chamber of Commerce featuring local businesses, organizations, and services in Lenzburg, Switzerland.">
     <meta name="author" content="Thierry Stahl">
@@ -13,7 +13,7 @@
     <meta property="og:title" content="Lenzburger Chamber of Commerce">
     <meta property="og:description" content="Explore businesses and organizations that are members of the Lenzburger Chamber of Commerce.">
     <meta property="og:image" content="https://talionidas.github.io/wdd231/chamber/images/logo.webp">
-    <meta property="og:url" content="https://talionidas.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://talionidas.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <link rel="icon" href="images/favicon.ico">
@@ -49,9 +49,9 @@
 <nav id="nav-bar" class="navigation">
 
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li class="current"><a href="directory.html">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
     </ul>
 
@@ -59,13 +59,10 @@
 
 <main>
 
-    <h1>Directory</h1>
-
-    <div class="view-buttons">
-
-        <main>
+    <h1>Home</h1>
 
             <section class="hero">
+                <h2 class="visually-hidden">Welcome</h2>
                 <img src="images/hero.webp"
                     alt="Lenzburg city"
                     width="1200"
@@ -95,7 +92,7 @@
                 <h2>Current Weather</h2>
                 <div id="current-weather"></div>
                 <h3>3-Day Forecast</h3>
-                <div id="forecast"></div>
+                <div id="forecast" class="weather-forecast"></div>
 
             </section>
 
@@ -107,10 +104,9 @@
 
             </section>
 
-        </main>
+        
 
 
-    </section>
 
 </main>
 
