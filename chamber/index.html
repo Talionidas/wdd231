@@ -31,7 +31,8 @@
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
 </head>
 
@@ -62,14 +63,51 @@
 
     <div class="view-buttons">
 
-        <button id="grid">Grid</button>
-        <button id="list">List</button>
+        <main>
 
-        <h2>Business Directory</h2>
+            <section class="hero">
+                <img src="images/hero.webp"
+                    alt="Lenzburg city"
+                    width="1200"
+                    height="500">
 
-    </div>
+                <a class="cta-button" href="join.html">Join the Chamber</a>
+            </section>
 
-    <section id="members" class="grid-view">
+
+            <section class="events">
+
+                <h2>Current Events</h2>
+
+                <article>
+
+                    <h3>Summer Business Networking</h3>
+
+                    <p>Meet local entrepreneurs and business owners during our monthly networking evening in Lenzburg.</p>
+
+                </article>
+
+            </section>
+
+
+            <section class="weather">
+
+                <h2>Current Weather</h2>
+                <div id="current-weather"></div>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast"></div>
+
+            </section>
+
+
+            <section class="spotlights">
+
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container"></div>
+
+            </section>
+
+        </main>
 
 
     </section>

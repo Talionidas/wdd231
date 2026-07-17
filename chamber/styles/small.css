@@ -361,3 +361,155 @@ section {
 .list-view section:nth-child(odd) {
     background: white;
 }
+
+
+
+/* ---------- Hero ---------- */
+
+
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: var(--primary);
+    color: var(--white);
+
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+
+    transition: .25s ease;
+}
+
+.cta-button:hover {
+    background: var(--accent);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.events,
+.weather,
+.spotlights {
+    background: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    margin-top: 0;
+    background: var(--primary);
+    color: white;
+    padding: .6rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.weather-current {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather-current h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.weather-current p {
+    margin: .3rem 0;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: .5rem auto;
+    display: block;
+}
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.weather-day {
+    flex: 1;
+    background: var(--background);
+    border-radius: 8px;
+    padding: .75rem;
+    text-align: center;
+}
+
+.weather-day h4 {
+    margin: 0 0 .4rem;
+    color: var(--primary);
+}
+
+.weather-day p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background: white;
+}
+
+.spotlight-card h3 {
+    color: var(--primary);
+    margin-bottom: .5rem;
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card p {
+    margin: .4rem 0;
+}
+
+.spotlight-card a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
