@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Lenzburger Chamber of Commerce</title>
+
+    <meta name="description" content="Apply to become a member of the Lenzburger Chamber of Commerce and grow your business through networking and community support.">
+
+    <meta name="author" content="Thierry Stahl">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join the Lenzburger Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Lenzburger Chamber of Commerce and enjoy exclusive business benefits.">
+    <meta property="og:image" content="https://talionidas.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://talionidas.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="images/logo.svg"
+         alt="Lenzburger Chamber of Commerce Logo"
+         width="50"
+         height="50">
+
+    <span>Lenzburger Chamber of Commerce</span>
+
+    <button
+        id="ham-btn"
+        class="hamburger"
+        aria-label="Open navigation">
+    </button>
+
+</header>
+
+<nav id="nav-bar" class="navigation">
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="current"><a href="join.html">Join</a></li>
+    </ul>
+
+</nav>
+
+<main>
+
+    <h1>Join the Chamber</h1>
+
+    <div class="join-container">
+
+
+        <form action="thankyou.html" method="get">
+
+            <label>
+                First Name*
+                <input
+                    type="text"
+                    name="firstname"
+                    title="Enter your first name"
+                    autocomplete="given-name"
+                    required>
+            </label>
+
+            <label>
+                Last Name*
+                <input
+                    type="text"
+                    name="lastname"
+                    title="Enter your last name"
+                    autocomplete="family-name"
+                    required>
+            </label>
+
+            <label>
+                Organization Title
+                <input
+                    type="text"
+                    name="title"
+                    title="Your position within the organisation"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\\- ]{7,}">
+            </label>
+
+            <label>
+                Email*
+                <input
+                    type="email"
+                    name="email"
+                    title="Enter your email address"
+                    autocomplete="email"
+                    placeholder="example@email.com"
+                    required>
+            </label>
+
+            <label>
+                Mobile Phone*
+                <input
+                    type="tel"
+                    name="phone"
+                    title="Enter your mobile phone number"
+                    autocomplete="tel"
+                    required>
+            </label>
+
+            <label>
+                Business / Organization Name*
+                <input
+                    type="text"
+                    name="business"
+                    title="Business or organisation name"
+                    autocomplete="organization"
+                    required>
+            </label>
+
+            <label>
+                Membership Level
+
+                <select
+                    name="membership"
+                    title="Choose membership level">
+
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+
+                </select>
+
+            </label>
+
+            <label>
+
+                Business Description
+
+                <textarea
+                    name="description"
+                    title="Describe your business"
+                    rows="6"></textarea>
+
+            </label>
+
+            <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp">
+
+            <input
+                type="submit"
+                value="Apply for Membership">
+
+        </form>
+
+
+        <aside class="memberships">
+
+            <section class="membership-card">
+
+                <h2>NP Membership</h2>
+
+                <p>Designed for non-profit organisations.</p>
+
+                <button data-dialog="np-dialog">
+                    Learn More
+                </button>
+
+            </section>
+
+            <section class="membership-card">
+
+                <h2>Bronze Membership</h2>
+
+                <p>Ideal for small local businesses.</p>
+
+                <button data-dialog="bronze-dialog">
+                    Learn More
+                </button>
+
+            </section>
+
+            <section class="membership-card">
+
+                <h2>Silver Membership</h2>
+
+                <p>For growing organisations seeking visibility.</p>
+
+                <button data-dialog="silver-dialog">
+                    Learn More
+                </button>
+
+            </section>
+
+            <section class="membership-card">
+
+                <h2>Gold Membership</h2>
+
+                <p>Maximum exposure and exclusive benefits.</p>
+
+                <button data-dialog="gold-dialog">
+                    Learn More
+                </button>
+
+            </section>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+
+<dialog id="np-dialog">
+
+    <h2>NP Membership</h2>
+
+    <ul>
+        <li>No membership fee</li>
+        <li>Directory listing</li>
+        <li>Community networking</li>
+        <li>Local event invitations</li>
+    </ul>
+
+    <button class="close-dialog">
+        Close
+    </button>
+
+</dialog>
+
+<dialog id="bronze-dialog">
+
+    <h2>Bronze Membership</h2>
+
+    <ul>
+        <li>Business directory listing</li>
+        <li>Monthly networking events</li>
+        <li>Training workshops</li>
+        <li>Newsletter inclusion</li>
+    </ul>
+
+    <button class="close-dialog">
+        Close
+    </button>
+
+</dialog>
+
+<dialog id="silver-dialog">
+
+    <h2>Silver Membership</h2>
+
+    <ul>
+        <li>Everything in Bronze</li>
+        <li>Event discounts</li>
+        <li>Featured directory listing</li>
+        <li>Business promotion opportunities</li>
+    </ul>
+
+    <button class="close-dialog">
+        Close
+    </button>
+
+</dialog>
+
+<dialog id="gold-dialog">
+
+    <h2>Gold Membership</h2>
+
+    <ul>
+        <li>Everything in Silver</li>
+        <li>Homepage spotlight advertising</li>
+        <li>VIP networking events</li>
+        <li>Premium promotional opportunities</li>
+    </ul>
+
+    <button class="close-dialog">
+        Close
+    </button>
+
+</dialog>
+
+<footer>
+
+    <div class="contact">
+
+        <h3>Lenzburger Chamber of Commerce</h3>
+
+        <p>Example Street 1</p>
+        <p>5600 Lenzburg, Switzerland</p>
+        <p>contact@lenzburgerchamber.example</p>
+        <p>+41 12 345 6789</p>
+
+    </div>
+
+    <div class="social">
+
+        <a href="https://www.linkedin.com/in/thierry-stahl-703851213/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://github.com/Talionidas" target="_blank">
+            <img src="images/github.svg" alt="GitHub">
+        </a>
+
+        <a href="https://www.facebook.com/thierry.stahl.96/" target="_blank">
+            <img src="images/facebook.svg" alt="Facebook">
+        </a>
+
+        <a href="https://www.youtube.com/@TS123boss" target="_blank">
+            <img src="images/youtube.svg" alt="YouTube">
+        </a>
+
+    </div>
+
+    <div class="development">
+
+        <p>
+
+            &copy;
+
+            <span id="currentyear"></span>
+
+            Thierry Stahl |
+
+            WDD 231
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

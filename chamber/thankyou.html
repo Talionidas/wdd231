@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Lenzburger Chamber of Commerce</title>
+
+    <meta name="description" content="Thank you for applying to join the Lenzburger Chamber of Commerce.">
+
+    <meta name="author" content="Thierry Stahl">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Thank You | Lenzburger Chamber of Commerce">
+    <meta property="og:description" content="Thank you for submitting your chamber membership application.">
+    <meta property="og:image" content="https://talionidas.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://talionidas.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="images/logo.svg"
+        alt="Lenzburger Chamber of Commerce Logo"
+        width="50"
+        height="50">
+
+    <span>Lenzburger Chamber of Commerce</span>
+
+    <button
+        id="ham-btn"
+        class="hamburger"
+        aria-label="Open navigation">
+    </button>
+
+</header>
+
+<nav id="nav-bar" class="navigation">
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="discover.html">Discover</a></li>
+
+        <li><a href="directory.html">Directory</a></li>
+
+        <li><a href="join.html">Join</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+    <h1>Thank You!</h1>
+
+    <section class="thankyou-card">
+
+        <h2>Your Membership Application Has Been Received</h2>
+
+        <p>
+            Thank you for applying to become a member of the
+            <strong>Lenzburger Chamber of Commerce.</strong>
+        </p>
+
+        <p>Below is a summary of the information you submitted.</p>
+
+        <div class="application-summary">
+
+            <p><strong>First Name:</strong> <span id="firstname"></span></p>
+
+            <p><strong>Last Name:</strong> <span id="lastname"></span></p>
+
+            <p><strong>Email:</strong> <span id="email"></span></p>
+
+            <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+
+            <p><strong>Business:</strong> <span id="business"></span></p>
+
+            <p><strong>Membership Level:</strong> <span id="membership"></span></p>
+
+            <p><strong>Application Submitted:</strong> <span id="timestamp"></span></p>
+
+        </div>
+
+        <p class="return-home">
+
+            <a class="cta-button" href="index.html">
+                Return to Home
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="contact">
+
+        <h3>Lenzburger Chamber of Commerce</h3>
+
+        <p>Example Street 1</p>
+
+        <p>5600 Lenzburg, Switzerland</p>
+
+        <p>contact@lenzburgerchamber.example</p>
+
+        <p>+41 12 345 6789</p>
+
+    </div>
+
+    <div class="social">
+
+        <a href="https://www.linkedin.com/in/thierry-stahl-703851213/" target="_blank">
+
+            <img src="images/linkedin.svg" alt="LinkedIn">
+
+        </a>
+
+        <a href="https://github.com/Talionidas" target="_blank">
+
+            <img src="images/github.svg" alt="GitHub">
+
+        </a>
+
+        <a href="https://www.facebook.com/thierry.stahl.96/" target="_blank">
+
+            <img src="images/facebook.svg" alt="Facebook">
+
+        </a>
+
+        <a href="https://www.youtube.com/@TS123boss" target="_blank">
+
+            <img src="images/youtube.svg" alt="YouTube">
+
+        </a>
+
+    </div>
+
+    <div class="development">
+
+        <p>
+
+            &copy;
+
+            <span id="currentyear"></span>
+
+            Thierry Stahl |
+
+            WDD 231
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

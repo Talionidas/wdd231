@@ -96,3 +96,34 @@ footer {
 }
 
 }
+
+
+/* ---------- Join Page Setup ---------- */
+
+@media only screen and (min-width: 38rem) {
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .memberships {
+        position: sticky;
+        top: 1rem;
+    }
+
+}
+
+/* =====================================================
+   THANK YOU PAGE
+===================================================== */
+
+@media only screen and (min-width: 38rem) {
+
+    .thankyou-card {
+        padding: 3rem;
+    }
+
+}
