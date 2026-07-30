@@ -1,0 +1,148 @@
+/* ---------- Color Scheme ---------- */
+
+:root {
+    --primary-color: #12355b;
+    --secondary-color: #c1121f;
+    --background-color: #f8f9fa;
+    --text-color: #1f2937;
+    --border-color: #d9d9d9;
+
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+
+    --max-width: 1100px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* ---------- Base ---------- */
+
+body {
+    font-family: var(--body-font);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-width: 320px;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+    background: white;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 6px solid var(--secondary-color);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: .4rem;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem 0;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    padding: .75rem;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: .75rem;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* ---------- Wireframe ---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wireframe img {
+    max-width: 450px;
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    margin-top: 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

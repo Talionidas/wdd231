@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Run Switzerland | Website Site Plan</title>
+
+    <meta name="description" content="Site plan for the Run Switzerland website project.">
+    <meta name="author" content="Thierry Stahl">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Run Switzerland</h1>
+    <p>Website Planning Document</p>
+</header>
+
+<main>
+
+<section>
+    <h2>Site Name</h2>
+
+    <p><strong>Run Switzerland</strong></p>
+
+    <p>
+        For the name <strong>Run Switzerland</strong> I was thinking of an inspiring,
+        yet short and memorable name that talks to its target audience whilst describing its purpose.
+        The website focuses on helping runners discover races throughout Switzerland,
+        regardless of discipline or experience level.
+    </p>
+
+    <p><strong>Possible domain:</strong> runswitzerland.ch</p>
+</section>
+
+<section>
+    <h2>Site Purpose</h2>
+
+    <p>
+        Run Switzerland provides a central hub where runners can discover upcoming
+        running events throughout Switzerland. Visitors will be able to browse races,
+        filter events according to their preferences, learn about different race
+        disciplines, and receive guidance on selecting a suitable race based on
+        their current experience and fitness level.
+    </p>
+
+    <p>
+        The website will include information about:
+    </p>
+
+    <ul>
+        <li>Upcoming races loaded dynamically from a local JSON file.</li>
+        <li>Filtering races by region, distance, race type, elevation and month.</li>
+        <li>Detailed race information displayed in modal windows.</li>
+        <li>Saving favourite races using Local Storage.</li>
+        <li>A running guide with beginner advice and race recommendations.</li>
+        <li>A feedback/contact form.</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Race Categories</h2>
+
+    <p>
+        The project will primarily use data from the Swiss Running Guide and include
+        the following race disciplines:
+    </p>
+
+    <ul>
+        <li>City Running</li>
+        <li>Running</li>
+        <li>Trail Running</li>
+        <li>Mountain Running</li>
+        <li>Obstacle Races</li>
+        <li>Relay</li>
+        <li>Waffenlauf</li>
+        <li>Women's Run</li>
+        <li>Family Race</li>
+        <li>Kids</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Scenarios</h2>
+
+    <ul>
+        <li>Which trail races are taking place in the Bernese Oberland this summer?</li>
+        <li>What race would be suitable for someone preparing for their first half marathon?</li>
+        <li>Which obstacle races are available in Switzerland this year?</li>
+        <li>What race should I choose based on my current fitness level?</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Color Scheme</h2>
+
+    <table>
+
+        <tr>
+            <th>Color</th>
+            <th>Usage</th>
+        </tr>
+
+        <tr>
+            <td>Alpine Blue (#12355B)</td>
+            <td>Header, navigation, footer, headings</td>
+        </tr>
+
+        <tr>
+            <td>Swiss Red (#C1121F)</td>
+            <td>Buttons, links, highlights, accents</td>
+        </tr>
+
+        <tr>
+            <td>Snow White (#F8F9FA)</td>
+            <td>Page background and content sections</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section>
+
+    <h2>Typography</h2>
+
+    <table>
+
+        <tr>
+            <th>Font</th>
+            <th>Usage</th>
+        </tr>
+
+        <tr>
+            <td>Montserrat</td>
+            <td>Main headings and navigation</td>
+        </tr>
+
+        <tr>
+            <td>Open Sans</td>
+            <td>Paragraphs, lists and general content</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section>
+
+    <h2>Planned Pages</h2>
+
+    <h3>Home</h3>
+
+    <ul>
+        <li>Hero image</li>
+        <li>Introduction to the website</li>
+        <li>Featured upcoming races</li>
+        <li>My running story and motivation</li>
+        <li>Button to browse races</li>
+    </ul>
+
+    <h3>Race Finder</h3>
+
+    <ul>
+        <li>Search bar</li>
+        <li>Filter by distance</li>
+        <li>Filter by race discipline</li>
+        <li>Filter by region</li>
+        <li>Filter by elevation gain</li>
+        <li>Filter by month</li>
+        <li>Race cards generated from JSON</li>
+        <li>Modal dialog with additional race information</li>
+        <li>Favourite races using Local Storage</li>
+    </ul>
+
+    <h3>Running Guide</h3>
+
+    <ul>
+        <li>Beginner advice</li>
+        <li>Training recommendations</li>
+        <li>Choosing the right race</li>
+        <li>"Find Your Next Challenge" recommendation tool</li>
+        <li>Feedback form</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Future JavaScript Features</h2>
+
+    <ul>
+        <li>Load race information from a local JSON file using the Fetch API.</li>
+        <li>Generate race cards dynamically with JavaScript.</li>
+        <li>Allow users to filter races by different criteria.</li>
+        <li>Display race details inside a modal window.</li>
+        <li>Save favourite races using Local Storage.</li>
+        <li>Recommend suitable races based on the user's fitness level.</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Wireframes</h2>
+
+
+    <div class="wireframe-container">
+
+        <p><strong>Mobile Wireframe</strong></p>
+
+        <img src="images/mobile-wireframe.png" alt="Mobile homepage wireframe">
+
+    </div>
+
+    <div class="wireframe">
+
+        <p><strong>Desktop Wireframe</strong></p>
+
+        <img src="images/desktop-wireframe.png" alt="Desktop homepage wireframe">
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>&copy;2026 | Thierry Stahl | Switzerland | WDD 231 Site Plan</p>
+
+</footer>
+
+</body>
+</html>

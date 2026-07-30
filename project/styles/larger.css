@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    body {
+        font-size: 1.05rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .wireframe-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
