@@ -18,6 +18,7 @@ function displayPlaces(places) {
         image.src = `images/${place.image}`;
         image.alt = place.name;
         image.loading = "lazy";
+        image.decoding = "async";
         image.width = 300;
         image.height = 200;
 
