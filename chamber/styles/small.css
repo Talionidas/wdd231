@@ -705,3 +705,70 @@ dialog button {
         transform: translateY(0);
     }
 }
+
+
+
+
+/* ---------- Discover Page ---------- */
+
+.visit-message {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.discover-card {
+    background: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-card address {
+    margin: 1rem 0;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.discover-card p {
+    line-height: 1.5;
+}
+
+.discover-card button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: .75rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.discover-card button:hover {
+    background: var(--accent);
+}

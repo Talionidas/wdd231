@@ -116,14 +116,83 @@ footer {
 
 }
 
-/* =====================================================
-   THANK YOU PAGE
-===================================================== */
+/* ---------- Thank you ---------- */
 
 @media only screen and (min-width: 38rem) {
 
     .thankyou-card {
         padding: 3rem;
+    }
+
+}
+
+
+
+/* ---------- Discover Page ---------- */
+
+@media only screen and (min-width: 38rem) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five six"
+            "seven eight";
+        gap: 1.5rem;
+    }
+
+    .discover-card:nth-child(1) {
+        grid-area: one;
+    }
+
+    .discover-card:nth-child(2) {
+        grid-area: two;
+    }
+
+    .discover-card:nth-child(3) {
+        grid-area: three;
+    }
+
+    .discover-card:nth-child(4) {
+        grid-area: four;
+    }
+
+    .discover-card:nth-child(5) {
+        grid-area: five;
+    }
+
+    .discover-card:nth-child(6) {
+        grid-area: six;
+    }
+
+    .discover-card:nth-child(7) {
+        grid-area: seven;
+    }
+
+    .discover-card:nth-child(8) {
+        grid-area: eight;
+    }
+
+}
+
+
+@media only screen and (min-width: 64rem) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "one two three four"
+            "five six seven eight";
+    }
+
+    .discover-card img {
+        transition: .3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(.85);
     }
 
 }
