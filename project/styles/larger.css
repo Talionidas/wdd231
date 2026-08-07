@@ -1,25 +1,121 @@
 @media only screen and (min-width: 768px) {
 
-    header h1 {
-        font-size: 3rem;
-    }
 
-    header p {
-        font-size: 1.2rem;
-    }
 
-    body {
-        font-size: 1.05rem;
-    }
 
-    main {
-        padding: 2rem;
-    }
+header {
+    padding: 3rem 1rem;
+}
 
-    .wireframe-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
+
+header h1 {
+    font-size: 3rem;
+}
+
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+nav button {
+    display: none;
+}
+
+
+nav ul,
+nav ul.open {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+nav li {
+    padding: 1rem;
+}
+
+
+
+
+
+
+main {
+    padding: 2rem;
+}
+
+
+
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.hero-content {
+    text-align: left;
+}
+
+
+
+
+
+#raceContainer {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.guide-races {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
+.filters {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+
+
+
+form {
+    max-width: 700px;
+}
+
+
+
+
+dialog {
+    width: 500px;
+}
+
+
+
+
+table {
+    font-size: 1rem;
+}
+
+
+
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
 
 }

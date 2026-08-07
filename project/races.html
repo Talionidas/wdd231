@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Run Switzerland | Race Finder</title>
+
+    <meta name="description" content="Browse running events throughout Switzerland using filters for distance, race type, region and month.">
+    <meta name="author" content="Thierry Stahl">
+
+    <meta property="og:title" content="Run Switzerland">
+    <meta property="og:description" content="Discover running events across Switzerland.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/races.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-container">
+
+        <a href="index.html">
+            <img src="images/logo.webp" alt="Run Switzerland logo" width="80" height="80">
+        </a>
+
+        <div>
+            <h1>Run Switzerland</h1>
+            <p>Find Your Next Challenge</p>
+        </div>
+
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav>
+
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="races.html">Race Finder</a></li>
+            <li><a href="guide.html">Running Guide</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>Race Finder</h2>
+
+    <p>
+        Search upcoming races across Switzerland and narrow your results
+        using the available filters.
+    </p>
+
+</section>
+
+<section class="filter-section">
+
+    <h2>Search & Filter</h2>
+
+    <div class="filter-grid">
+
+        <div>
+
+            <label for="searchInput">Search</label>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by race name">
+
+        </div>
+
+        <div>
+
+            <label for="distanceFilter">Maximum Distance</label>
+
+            <select id="distanceFilter">
+
+                <option value="all">All Distances</option>
+                <option value="5">Up to 5 km</option>
+                <option value="10">Up to 10 km</option>
+                <option value="21">Up to Half Marathon</option>
+                <option value="42">Up to Marathon</option>
+                <option value="100">Up to 100 km</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="categoryFilter">Race Category</label>
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option>City Running</option>
+                <option>Running</option>
+                <option>Trail Running</option>
+                <option>Mountain Running</option>
+                <option>Obstacle Races</option>
+                <option>Relay</option>
+                <option>Waffenlauf</option>
+                <option>Women's Run</option>
+                <option>Family Race</option>
+                <option>Kids</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="regionFilter">Region</label>
+
+            <select id="regionFilter">
+
+                <option value="all">All Regions</option>
+
+                <option>Central Switzerland</option>
+                <option>Eastern Switzerland</option>
+                <option>Zurich</option>
+                <option>Bern</option>
+                <option>Graubünden</option>
+                <option>Valais</option>
+                <option>Ticino</option>
+                <option>Lake Geneva</option>
+                <option>Northwestern Switzerland</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="monthFilter">Month</label>
+
+            <select id="monthFilter">
+
+                <option value="all">All Months</option>
+
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="elevationFilter">Elevation Gain</label>
+
+            <select id="elevationFilter">
+
+                <option value="all">Any Elevation</option>
+                <option value="500">Below 500 m</option>
+                <option value="1000">Below 1000 m</option>
+                <option value="2000">Below 2000 m</option>
+                <option value="2001">2000+ m</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="results-header">
+
+        <h2>Available Races</h2>
+
+        <p id="resultsCount"></p>
+
+    </div>
+
+    <div id="raceContainer" class="race-grid">
+
+        <!-- JavaScript inserts race cards here -->
+
+    </div>
+
+</section>
+
+<dialog id="raceDialog">
+
+    <button id="closeDialog">
+        ✕
+    </button>
+
+    <div id="dialogContent"></div>
+
+</dialog>
+
+<dialog id="raceModal">
+
+    <button id="closeModal" aria-label="Close dialog">
+        ✕
+    </button>
+
+    <div id="modalContent">
+
+        <!-- Filled dynamically -->
+
+    </div>
+
+</dialog>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Run Switzerland |
+            Thierry Stahl |
+            Switzerland
+        </p>
+
+        <p id="lastModified"></p>
+
+        <nav class="footer-links">
+
+            <a href="attributions.html">Attributions</a>
+
+            <span>|</span>
+
+            <a
+                href="https://youtu.be/YOUR_VIDEO_ID"
+                target="_blank"
+                rel="noopener">
+                Project Demo
+            </a>
+
+        </nav>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

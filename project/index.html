@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Run Switzerland | Find Your Next Race</title>
+
+    <meta name="description" content="Discover running events across Switzerland. Search races by distance, region, month and discipline while finding your next running challenge.">
+    <meta name="author" content="Thierry Stahl">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Run Switzerland">
+    <meta property="og:description" content="Find your next race in Switzerland.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/final/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Run Switzerland logo" width="80" height="80">
+            </a>
+
+            <div>
+                <h1>Run Switzerland</h1>
+                <p>Find Your Next Challenge</p>
+            </div>
+
+        </div>
+
+        <button id="menuButton" aria-label="Open Navigation Menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+
+            <ul class="navigation">
+
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="races.html">Race Finder</a></li>
+                <li><a href="guide.html">Running Guide</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+
+                <source srcset="images/hero-home-large.webp" media="(min-width: 768px)">
+
+                <img
+                    src="images/hero-home.webp"
+                    alt="Runners on a scenic mountain trail in Switzerland"
+                    loading="eager"
+                    width="1200"
+                    height="600">
+
+            </picture>
+
+            <div class="hero-content">
+
+                <h2>Discover Your Next Running Adventure</h2>
+
+                <p>
+                    Whether you're preparing for your first 5 km or searching for your
+                    next mountain marathon, Run Switzerland helps you discover races
+                    throughout the country with simple filters and practical information.
+                </p>
+
+                <a class="button" href="races.html">Browse Races</a>
+
+            </div>
+
+        </section>
+
+        <section class="featured-races">
+
+            <h2>Featured Upcoming Races</h2>
+
+            <p>
+                Here are a few highlighted events from our race collection.
+                These featured races are loaded dynamically from the race database.
+            </p>
+
+            <div id="featuredRaces" class="race-grid">
+
+                <!-- Featured race cards generated with JavaScript -->
+
+            </div>
+
+        </section>
+
+        <section class="why-run-switzerland">
+
+            <h2>Why Use Run Switzerland?</h2>
+
+            <div class="benefits-grid">
+
+                <article>
+
+                    <h3>Discover New Races</h3>
+
+                    <p>
+                        Browse races from across Switzerland, from city events to
+                        challenging mountain ultras.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Find Events Faster</h3>
+
+                    <p>
+                        Filter races by distance, location, discipline,
+                        month, and elevation gain.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Choose the Right Challenge</h3>
+
+                    <p>
+                        Use our running guide to find races that match your
+                        current fitness level and future goals.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+        <section class="my-story">
+
+            <div class="story-image">
+
+                <img
+                    src="images/about-running.webp"
+                    alt="Runner training on a Swiss trail"
+                    loading="lazy"
+                    width="600"
+                    height="400">
+
+            </div>
+
+            <div class="story-content">
+
+                <h2>My Running Journey</h2>
+
+                <p>
+                    Running has become one of my favorite hobbies over the past few years.
+                    After returning home from my mission, it became a great way to stay
+                    physically active while also helping me clear my mind. What started
+                    as short runs gradually turned into a personal goal of completing a
+                    marathon.
+                </p>
+
+                <p>
+                    Earlier this year I finished my first marathon at the Zürich Marathon.
+                    Since then I've been looking for new races and challenges throughout
+                    Switzerland. Building this website combines two of my interests:
+                    web development and running.
+                </p>
+
+                <p>
+                    My hope is that this site can help other runners discover events they
+                    may not have known about and encourage them to set their own running
+                    goals.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="next-challenge">
+
+            <h2>Ready for Your Next Challenge?</h2>
+
+            <p>
+                Browse races across Switzerland, compare different disciplines, and
+                discover your next finish line.
+            </p>
+
+            <a class="button secondary-button" href="races.html">
+                Explore Race Finder
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                &copy; <span id="currentyear"></span> Run Switzerland |
+                Thierry Stahl | Switzerland
+            </p>
+
+            <p id="lastModified"></p>
+
+            <nav class="footer-links">
+
+                <a href="attributions.html">Attributions</a>
+
+                <span>|</span>
+
+                <a
+                    href="https://youtu.be/YOUR_VIDEO_ID"
+                    target="_blank"
+                    rel="noopener">
+                    Project Demo
+                </a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

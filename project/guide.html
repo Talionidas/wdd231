@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Run Switzerland | Running Guide</title>
+
+    <meta name="description" content="Learn about different race distances, running disciplines and find your next challenge with our running guide.">
+    <meta name="author" content="Thierry Stahl">
+
+    <meta property="og:title" content="Run Switzerland">
+    <meta property="og:description" content="Running tips and race recommendations.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/guide.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-container">
+
+        <a href="index.html">
+            <img src="images/logo.webp" alt="Run Switzerland logo" width="80" height="80">
+        </a>
+
+        <div>
+            <h1>Run Switzerland</h1>
+            <p>Find Your Next Challenge</p>
+        </div>
+
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav>
+
+        <ul class="navigation">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="races.html">Race Finder</a></li>
+            <li><a class="active" href="guide.html">Running Guide</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>Running Guide</h2>
+
+    <p>
+        Whether you're preparing for your first race or planning your next marathon,
+        this guide will help you choose a suitable event and understand the different
+        types of races available in Switzerland.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Find Your Next Challenge</h2>
+
+    <p>
+        Enter the distance you covered during your Cooper Test (12-minute run).
+        Based on your result, we'll recommend race distances that may be suitable
+        for your current fitness level.
+    </p>
+
+    <label for="cooperDistance">
+        Distance completed in 12 minutes (meters)
+    </label>
+
+    <input
+        type="number"
+        id="cooperDistance"
+        placeholder="Example: 2400">
+
+    <button id="recommendButton">
+        Get Recommendation
+    </button>
+
+    <div id="recommendationResult">
+
+        <!-- Recommendation generated with JavaScript -->
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Swiss Running Disciplines</h2>
+
+    <div class="guide-grid">
+
+        <article>
+
+            <h3>City Running</h3>
+
+            <p>
+                Road races held in towns and cities, suitable for runners of all
+                experience levels.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Trail Running</h3>
+
+            <p>
+                Events on hiking trails with varied terrain and beautiful scenery.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Mountain Running</h3>
+
+            <p>
+                Challenging races with significant elevation gain and alpine routes.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Obstacle Races</h3>
+
+            <p>
+                Combine running with climbing, crawling and strength-based obstacles.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Relay</h3>
+
+            <p>
+                Team events where several runners complete different sections of
+                the course.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Family & Kids Events</h3>
+
+            <p>
+                Shorter races designed to encourage participation from children
+                and families.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>General Training Tips</h2>
+
+    <ul>
+
+        <li>Increase your weekly mileage gradually.</li>
+
+        <li>Include easy recovery runs between harder workouts.</li>
+
+        <li>Practice proper hydration and nutrition before race day.</li>
+
+        <li>Choose races that match both your fitness level and your goals.</li>
+
+        <li>Most importantly, enjoy the process and stay consistent.</li>
+
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Feedback</h2>
+
+    <p>
+        Have a suggestion or know about a race that should be included?
+        We'd love to hear from you.
+    </p>
+
+    <form method="get" action="form.html">
+
+        <label for="name">Name</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required>
+
+        <label for="email">Email</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+        <label for="subject">Subject</label>
+
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            required>
+
+        <label for="message">Message</label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required></textarea>
+
+        <button type="submit">
+            Send Feedback
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Run Switzerland |
+            Thierry Stahl |
+            Switzerland
+        </p>
+
+        <p id="lastModified"></p>
+
+        <nav class="footer-links">
+
+            <a href="attributions.html">Attributions</a>
+
+            <span>|</span>
+
+            <a
+                href="https://youtu.be/YOUR_VIDEO_ID"
+                target="_blank"
+                rel="noopener">
+                Project Demo
+            </a>
+
+        </nav>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

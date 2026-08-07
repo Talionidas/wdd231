@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback Submitted | Run Switzerland</title>
+
+    <meta name="description" content="Feedback submission confirmation for Run Switzerland.">
+
+    <meta name="author" content="Thierry Stahl">
+
+
+    <link rel="icon" href="images/favicon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        Run Switzerland
+    </h1>
+
+    <p>
+        Find your next running challenge
+    </p>
+
+
+</header>
+
+
+
+<nav>
+
+    <button id="menuButton">
+        ☰
+    </button>
+
+
+    <ul id="navigation">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="races.html">
+                Race Calendar
+            </a>
+        </li>
+
+        <li>
+            <a href="guide.html">
+                Running Guide
+            </a>
+        </li>
+
+    </ul>
+
+
+</nav>
+
+
+
+<main>
+
+
+<section class="confirmation">
+
+
+    <h2>
+        Thank You!
+    </h2>
+
+
+    <p>
+        Your feedback has been received.
+    </p>
+
+
+    <h3>
+        Submitted Information
+    </h3>
+
+
+    <div id="formResults">
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Thierry Stahl | Run Switzerland
+    </p>
+
+
+    <p>
+        <a href="attributions.html">
+            Attributions
+        </a>
+    </p>
+
+
+</footer>
+
+
+
+<script type="module">
+
+const results = document.querySelector("#formResults");
+
+const params = new URLSearchParams(
+    window.location.search
+);
+
+
+results.innerHTML = `
+
+    <p>
+        <strong>Name:</strong>
+        ${params.get("name")}
+    </p>
+
+
+    <p>
+        <strong>Email:</strong>
+        ${params.get("email")}
+    </p>
+
+
+    <p>
+        <strong>Message:</strong>
+        ${params.get("message")}
+    </p>
+
+`;
+
+</script>
+
+
+
+</body>
+
+</html>
