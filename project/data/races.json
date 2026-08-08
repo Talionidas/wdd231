@@ -9,7 +9,7 @@
         "category": "Running",
         "month": "April",
         "elevation": 120,
-        "image": "images/races/zurich-marathon.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "One of Switzerland's largest road marathons along Lake Zurich.",
         "website": "https://www.zurichmarathon.ch",
         "featured": true
@@ -24,7 +24,7 @@
         "category": "City Running",
         "month": "October",
         "elevation": 180,
-        "image": "images/races/swisscitymarathon.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Popular city marathon finishing in Lucerne's Swiss Life Arena.",
         "website": "https://www.swisscitymarathon.ch",
         "featured": true
@@ -39,7 +39,7 @@
         "category": "Mountain Running",
         "month": "September",
         "elevation": 1950,
-        "image": "images/races/jungfrau-marathon.webp",
+        "image": "images/alp_trail.webp",
         "description": "One of the world's most scenic mountain marathons.",
         "website": "https://www.jungfrau-marathon.ch",
         "featured": true
@@ -54,7 +54,7 @@
         "category": "Trail Running",
         "month": "July",
         "elevation": 6500,
-        "image": "images/races/grand-raid.webp",
+        "image": "images/alp_trail.webp",
         "description": "A demanding alpine ultramarathon through the Valais mountains.",
         "website": "https://www.grand-raid-bcvs.ch",
         "featured": false
@@ -69,7 +69,7 @@
         "category": "Mountain Running",
         "month": "August",
         "elevation": 2200,
-        "image": "images/races/sierre-zinal.webp",
+        "image": "images/alp_trail.webp",
         "description": "A legendary mountain race through the Swiss Alps.",
         "website": "https://www.sierre-zinal.com",
         "featured": false
@@ -84,7 +84,7 @@
         "category": "Running",
         "month": "September",
         "elevation": 90,
-        "image": "images/races/greifenseelauf.webp",
+        "image": "images/alp_trail.webp",
         "description": "Fast and flat half marathon around Lake Greifen.",
         "website": "https://www.greifenseelauf.ch",
         "featured": false
@@ -99,7 +99,7 @@
         "category": "Running",
         "month": "October",
         "elevation": 180,
-        "image": "images/races/hallwilerseelauf.webp",
+        "image": "images/alp_trail.webp",
         "description": "Scenic lakeside race around Hallwilersee.",
         "website": "https://www.hallwilerseelauf.ch",
         "featured": false
@@ -114,7 +114,7 @@
         "category": "Running",
         "month": "March",
         "elevation": 120,
-        "image": "images/races/kerzerslauf.webp",
+        "image": "images/alp_trail.webp",
         "description": "Popular spring race through the Seeland region.",
         "website": "https://www.kerzerslauf.ch",
         "featured": false
@@ -129,7 +129,7 @@
         "category": "City Running",
         "month": "May",
         "elevation": 250,
-        "image": "images/races/gpbern.webp",
+        "image": "images/family_gp.webp",
         "description": "One of the largest running events in Switzerland.",
         "website": "https://www.gpbern.ch",
         "featured": false
@@ -144,7 +144,7 @@
         "category": "Running",
         "month": "October",
         "elevation": 390,
-        "image": "images/races/lausanne-marathon.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Road marathon along Lake Geneva.",
         "website": "https://www.lausanne-marathon.com",
         "featured": false
@@ -159,7 +159,7 @@
         "category": "Mountain Running",
         "month": "June",
         "elevation": 1050,
-        "image": "images/races/aletsch-half.webp",
+        "image": "images/alp_trail.webp",
         "description": "High-altitude race overlooking the Aletsch Glacier.",
         "website": "https://www.aletsch-halbmarathon.ch",
         "featured": false
@@ -174,7 +174,7 @@
         "category": "Trail Running",
         "month": "August",
         "elevation": 3600,
-        "image": "images/races/matterhorn-ultraks.webp",
+        "image": "images/alp_trail.webp",
         "description": "Trail running beneath the Matterhorn.",
         "website": "https://www.matterhornultraks.ch",
         "featured": false
@@ -189,7 +189,7 @@
         "category": "Trail Running",
         "month": "July",
         "elevation": 2600,
-        "image": "images/races/swiss-alpine.webp",
+        "image": "images/alp_trail.webp",
         "description": "Historic alpine ultramarathon through Graubünden.",
         "website": "https://www.swissalpine.ch",
         "featured": false
@@ -204,7 +204,7 @@
         "category": "Obstacle Races",
         "month": "June",
         "elevation": 450,
-        "image": "images/races/spartan.webp",
+        "image": "images/obstacle_spartan.webp",
         "description": "Obstacle course race featuring climbs, carries and mud.",
         "website": "https://www.spartan.com",
         "featured": false
@@ -219,7 +219,7 @@
         "category": "Women's Run",
         "month": "June",
         "elevation": 80,
-        "image": "images/races/frauenlauf.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Annual women's running event in Bern.",
         "website": "https://www.frauenlauf.ch",
         "featured": false
@@ -234,7 +234,7 @@
         "category": "Kids",
         "month": "May",
         "elevation": 10,
-        "image": "images/races/kids-cup.webp",
+        "image": "images/family_gp.webp",
         "description": "Running event for children of all ages.",
         "website": "https://www.ubs-kidscup.ch",
         "featured": false
@@ -249,7 +249,7 @@
         "category": "Family Race",
         "month": "September",
         "elevation": 40,
-        "image": "images/races/family-run.webp",
+        "image": "images/family_gp.webp",
         "description": "Fun run suitable for the whole family.",
         "website": "https://www.winterthur.com",
         "featured": false
@@ -264,7 +264,7 @@
         "category": "Relay",
         "month": "July",
         "elevation": 300,
-        "image": "images/races/gigathlon.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Team running stage within Switzerland's Gigathlon.",
         "website": "https://www.gigathlon.swiss",
         "featured": false
@@ -279,7 +279,7 @@
         "category": "Waffenlauf",
         "month": "November",
         "elevation": 450,
-        "image": "images/races/waffenlauf.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Traditional Swiss military endurance race.",
         "website": "https://www.waffenlauf.ch",
         "featured": false
@@ -294,7 +294,7 @@
         "category": "Running",
         "month": "October",
         "elevation": 110,
-        "image": "images/races/locarno-half.webp",
+        "image": "images/zuerich_marathon.webp",
         "description": "Fast lakeside half marathon in southern Switzerland.",
         "website": "https://www.ascona-locarno.com",
         "featured": false

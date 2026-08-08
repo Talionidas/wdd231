@@ -11,10 +11,10 @@
 
     <meta property="og:title" content="Run Switzerland">
     <meta property="og:description" content="Running tips and race recommendations.">
-    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:image" content="images/logo.png">
     <meta property="og:type" content="website">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon_run.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
     <div class="logo-container">
 
         <a href="index.html">
-            <img src="images/logo.webp" alt="Run Switzerland logo" width="80" height="80">
+            <img src="images/logo.png" alt="Run Switzerland logo" width="80" height="80">
         </a>
 
         <div>
@@ -78,13 +78,15 @@
 
 <section>
 
-    <h2>Find Your Next Challenge</h2>
+<h2>Find Your Next Challenge</h2>
 
-    <p>
-        Enter the distance you covered during your Cooper Test (12-minute run).
-        Based on your result, we'll recommend race distances that may be suitable
-        for your current fitness level.
-    </p>
+<p>
+    Enter the distance you covered during your Cooper Test (12-minute run).
+    Based on your result, we'll recommend race distances that may be suitable
+    for your current fitness level.
+</p>
+
+<form id="fitnessForm">
 
     <label for="cooperDistance">
         Distance completed in 12 minutes (meters)
@@ -93,17 +95,22 @@
     <input
         type="number"
         id="cooperDistance"
-        placeholder="Example: 2400">
+        name="cooperDistance"
+        placeholder="Example: 2400"
+        min="1"
+        required>
 
-    <button id="recommendButton">
+    <button type="submit" id="recommendButton">
         Get Recommendation
     </button>
 
-    <div id="recommendationResult">
+</form>
 
-        <!-- Recommendation generated with JavaScript -->
+<div id="recommendationResult">
 
-    </div>
+    <!-- Recommendation generated with JavaScript -->
+
+</div>
 
 </section>
 
