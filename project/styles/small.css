@@ -94,6 +94,11 @@ nav button {
     padding: .5rem;
 }
 
+#menuButton {
+    display: block;
+    margin: 1rem auto;
+}
+
 
 nav ul {
     display: none;
