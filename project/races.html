@@ -8,13 +8,22 @@
 
 <title>Run Switzerland | Race Finder</title>
 
-<meta name="description" content="Browse running events throughout Switzerland using filters for distance, race type, region and month.">
+<meta
+    name="description"
+    content="Browse running events throughout Switzerland using filters for distance, race type, region and month.">
+
 <meta name="author" content="Thierry Stahl">
 
 <meta property="og:title" content="Run Switzerland | Race Finder">
-<meta property="og:description" content="Discover running events across Switzerland and find your next race.">
-<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
-<meta property="og:url" content="https://talionidas.github.io/wdd231/project/races.html">
+<meta
+    property="og:description"
+    content="Discover running events across Switzerland and find races that match your distance, region and goals.">
+<meta
+    property="og:image"
+    content="https://talionidas.github.io/wdd231/project/images/logo.png">
+<meta
+    property="og:url"
+    content="https://talionidas.github.io/wdd231/project/races.html">
 <meta property="og:type" content="website">
 
 <link rel="icon" href="favicon_run.ico">
@@ -22,7 +31,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
 
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/larger.css">
@@ -56,7 +67,8 @@
 
 <button
     id="menuButton"
-    aria-label="Open Navigation Menu">
+    aria-label="Open Navigation Menu"
+    aria-expanded="false">
     ☰
 </button>
 
@@ -349,59 +361,53 @@
 
 </section>
 
+<dialog id="raceDialog" aria-labelledby="dialogTitle">
 
-</main>
+    <button
+        id="closeDialog"
+        aria-label="Close race details">
+        ✕
+    </button>
 
-<dialog id="raceDialog">
+    <div id="dialogContent">
 
+        <!-- Race details are inserted dynamically -->
 
-<button
-    id="closeDialog"
-    aria-label="Close race details">
-    ✕
-</button>
-
-<div id="dialogContent">
-
-    <!-- Race details are inserted dynamically -->
-
-</div>
-
+    </div>
 
 </dialog>
+
+
+</main>
 
 <footer>
 
 
-<div class="footer-content">
+<p>
+    &copy; <span id="currentyear"></span>
+    Run Switzerland |
+    Thierry Stahl |
+    Switzerland
+</p>
 
-    <p>
-        &copy; <span id="currentyear"></span>
-        Run Switzerland |
-        Thierry Stahl |
-        Switzerland
-    </p>
+<p id="lastModified"></p>
 
-    <p id="lastModified"></p>
+<nav class="footer-links">
 
-    <nav class="footer-links">
+    <a href="attributions.html">
+        Attributions
+    </a>
 
-        <a href="attributions.html">
-            Attributions
-        </a>
+    <span>|</span>
 
-        <span>|</span>
+    <a
+        href="https://youtu.be/YOUR_VIDEO_ID"
+        target="_blank"
+        rel="noopener">
+        Project Demo
+    </a>
 
-        <a
-            href="https://youtu.be/YOUR_VIDEO_ID"
-            target="_blank"
-            rel="noopener">
-            Project Demo
-        </a>
-
-    </nav>
-
-</div>
+</nav>
 
 
 </footer>

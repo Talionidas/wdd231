@@ -1,344 +1,284 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<title>Running Guide | Run Switzerland</title>
 
-<title>Run Switzerland | Running Guide</title>
+	<meta name="description" content="Learn about Swiss running disciplines, training tips, and find race recommendations based on your Cooper Test result.">
+	<meta name="author" content="Thierry Stahl">
 
-<meta name="description" content="Learn about different race distances, running disciplines and find your next challenge with our running guide.">
-<meta name="author" content="Thierry Stahl">
+	<meta property="og:title" content="Run Switzerland | Running Guide and Race Recommendations">
+	<meta property="og:description" content="Explore Swiss running disciplines, training tips, and discover race distances suited to your current fitness level.">
+	<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
+	<meta property="og:url" content="https://talionidas.github.io/wdd231/project/guide.html">
+	<meta property="og:type" content="website">
 
-<meta property="og:title" content="Run Switzerland | Running Guide">
-<meta property="og:description" content="Some great running tips and race recommendations that go with them.">
-<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
-<meta property="og:url" content="https://talionidas.github.io/wdd231/project/guide.html">
-<meta property="og:type" content="website">
+	<link rel="icon" href="favicon_run.ico">
 
-<link rel="icon" href="favicon_run.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-
-<script type="module" src="scripts/guide.js"></script>
-
-
+	<link rel="stylesheet" href="styles/small.css">
+	<link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
-
-<header>
-
-
-<div class="logo-container">
-
-    <a href="index.html">
-        <img
-            src="images/logo.png"
-            alt="Run Switzerland logo"
-            width="80"
-            height="80">
-    </a>
-
-    <div>
-        <p class="site-title">Run Switzerland</p>
-        <p>Find Your Next Challenge</p>
-    </div>
-
-</div>
-
-<button
-    id="menuButton"
-    aria-label="Open Navigation Menu">
-    ☰
-</button>
-
-<nav>
-
-    <ul class="navigation">
-
-        <li>
-            <a href="index.html">
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a href="races.html">
-                Race Finder
-            </a>
-        </li>
-
-        <li>
-            <a
-                class="active"
-                href="guide.html">
-                Running Guide
-            </a>
-        </li>
-
-    </ul>
-
-</nav>
-
-
-</header>
-
-<main>
-
-
-<h1>Running Guide</h1>
-
-<p>
-    Whether you're preparing for your first race or planning your next marathon,
-    this guide will help you choose a suitable event and understand the different
-    types of races available in Switzerland.
-</p>
-
-<section>
-
-    <h2>Find Your Next Challenge</h2>
-
-    <p>
-        Enter the distance you covered during your Cooper Test (12-minute run).
-        Based on your result, we'll recommend race distances that may be suitable
-        for your current fitness level.
-    </p>
-
-    <form id="fitnessForm">
-
-        <label for="cooperDistance">
-            Distance completed in 12 minutes (meters)
-        </label>
-
-        <input
-            type="number"
-            id="cooperDistance"
-            name="cooperDistance"
-            placeholder="Example: 2400"
-            min="1"
-            required>
-
-        <button
-            type="submit"
-            id="recommendButton">
-            Get Recommendation
-        </button>
-
-    </form>
-
-    <div id="recommendationResult">
-        <!-- Recommendation generated with JavaScript -->
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Swiss Running Disciplines</h2>
-
-    <div class="guide-grid">
-
-        <article>
-
-            <h3>City Running</h3>
-
-            <p>
-                Road races held in towns and cities, suitable for runners of all
-                experience levels.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Trail Running</h3>
-
-            <p>
-                Events on hiking trails with varied terrain and beautiful scenery.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Mountain Running</h3>
-
-            <p>
-                Challenging races with significant elevation gain and alpine routes.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Obstacle Races</h3>
-
-            <p>
-                Combine running with climbing, crawling and strength-based obstacles.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Relay</h3>
-
-            <p>
-                Team events where several runners complete different sections of
-                the course.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Family &amp; Kids Events</h3>
-
-            <p>
-                Shorter races designed to encourage participation from children
-                and families.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>General Training Tips</h2>
-
-    <ul>
-
-        <li>
-            Increase your weekly mileage gradually.
-        </li>
-
-        <li>
-            Include easy recovery runs between harder workouts.
-        </li>
-
-        <li>
-            Practice proper hydration and nutrition before race day.
-        </li>
-
-        <li>
-            Choose races that match both your fitness level and your goals.
-        </li>
-
-        <li>
-            Most importantly, enjoy the process and stay consistent.
-        </li>
-
-    </ul>
-
-</section>
-
-<section>
-
-    <h2>Feedback</h2>
-
-    <p>
-        Have a suggestion or know about a race that should be included?
-        We'd love to hear from you.
-    </p>
-
-    <form method="get" action="feedback.html">
-
-        <label for="name">
-            Name
-        </label>
-
-        <input
-            type="text"
-            id="name"
-            name="name"
-            required>
-
-        <label for="email">
-            Email
-        </label>
-
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required>
-
-        <label for="subject">
-            Subject
-        </label>
-
-        <input
-            type="text"
-            id="subject"
-            name="subject"
-            required>
-
-        <label for="message">
-            Message
-        </label>
-
-        <textarea
-            id="message"
-            name="message"
-            rows="6"
-            required></textarea>
-
-        <button type="submit">
-            Send Feedback
-        </button>
-
-    </form>
-
-</section>
-
-
-</main>
-
-<footer>
-
-
-<div class="footer-content">
-
-    <p>
-        &copy; <span id="currentyear"></span>
-        Run Switzerland |
-        Thierry Stahl |
-        Switzerland
-    </p>
-
-    <p id="lastModified"></p>
-
-    <nav class="footer-links">
-
-        <a href="attributions.html">
-            Attributions
-        </a>
-
-        <span>|</span>
-
-        <a
-            href="https://youtu.be/YOUR_VIDEO_ID"
-            target="_blank"
-            rel="noopener">
-            Project Demo
-        </a>
-
-    </nav>
-
-</div>
-
-</footer>
-
+	<header>
+		<div class="logo-container">
+			<a href="index.html">
+				<img
+					src="images/logo.png"
+					alt="Run Switzerland logo"
+					width="80"
+					height="80">
+			</a>
+
+			<div>
+				<p class="site-title">Run Switzerland</p>
+				<p>Find Your Next Challenge</p>
+			</div>
+		</div>
+
+		<button
+			id="menuButton"
+			aria-label="Open Navigation Menu">
+			☰
+		</button>
+
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
+
+				<li>
+					<a href="races.html">
+						Race Finder
+					</a>
+				</li>
+
+				<li>
+					<a
+						class="active"
+						href="guide.html">
+						Running Guide
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Running Guide</h1>
+
+		<section>
+			<h2>Find Your Next Challenge</h2>
+
+			<p>
+				Enter the distance you covered during your Cooper Test (12-minute run).
+				Based on your result, we'll recommend race distances that may be suitable
+				for your current fitness level.
+			</p>
+
+			<form id="fitnessForm">
+				<label for="cooperDistance">
+					Distance completed in 12 minutes (meters)
+				</label>
+
+				<input
+					type="number"
+					id="cooperDistance"
+					name="cooperDistance"
+					placeholder="Example: 2400"
+					min="1"
+					required>
+
+				<button
+					type="submit"
+					id="recommendButton">
+					Get Recommendation
+				</button>
+			</form>
+
+			<div id="recommendationResult">
+				<!-- Recommendation generated with JavaScript -->
+			</div>
+		</section>
+
+		<section>
+			<h2>Swiss Running Disciplines</h2>
+
+			<div class="guide-grid">
+				<article>
+					<h3>City Running</h3>
+
+					<p>
+						Road races held in towns and cities, suitable for runners of all
+						experience levels.
+					</p>
+				</article>
+
+				<article>
+					<h3>Trail Running</h3>
+
+					<p>
+						Events on hiking trails with varied terrain and beautiful scenery.
+					</p>
+				</article>
+
+				<article>
+					<h3>Mountain Running</h3>
+
+					<p>
+						Challenging races with significant elevation gain and alpine routes.
+					</p>
+				</article>
+
+				<article>
+					<h3>Obstacle Races</h3>
+
+					<p>
+						Combine running with climbing, crawling and strength-based obstacles.
+					</p>
+				</article>
+
+				<article>
+					<h3>Relay</h3>
+
+					<p>
+						Team events where several runners complete different sections of
+						the course.
+					</p>
+				</article>
+
+				<article>
+					<h3>Family &amp; Kids Events</h3>
+
+					<p>
+						Shorter races designed to encourage participation from children
+						and families.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section>
+			<h2>General Training Tips</h2>
+
+			<ul>
+				<li>
+					Increase your weekly mileage gradually.
+				</li>
+
+				<li>
+					Include easy recovery runs between harder workouts.
+				</li>
+
+				<li>
+					Practice proper hydration and nutrition before race day.
+				</li>
+
+				<li>
+					Choose races that match both your fitness level and your goals.
+				</li>
+
+				<li>
+					Most importantly, enjoy the process and stay consistent.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Feedback</h2>
+
+			<p>
+				Have a suggestion or know about a race that should be included?
+				We'd love to hear from you.
+			</p>
+
+			<form method="get" action="feedback.html">
+				<label for="name">
+					Name
+				</label>
+
+				<input
+					type="text"
+					id="name"
+					name="name"
+					required>
+
+				<label for="email">
+					Email
+				</label>
+
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required>
+
+				<label for="subject">
+					Subject
+				</label>
+
+				<input
+					type="text"
+					id="subject"
+					name="subject"
+					required>
+
+				<label for="message">
+					Message
+				</label>
+
+				<textarea
+					id="message"
+					name="message"
+					rows="6"
+					required></textarea>
+
+				<button type="submit">
+					Send Feedback
+				</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<p>
+				&copy; <span id="currentyear"></span>
+				Run Switzerland |
+				Thierry Stahl |
+				Switzerland
+			</p>
+
+			<p id="lastModified"></p>
+
+			<nav class="footer-links">
+				<a href="attributions.html">
+					Attributions
+				</a>
+
+				<span>|</span>
+
+				<a
+					href="https://youtu.be/YOUR_VIDEO_ID"
+					target="_blank"
+					rel="noopener">
+					Project Demo
+				</a>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="scripts/main.js" type="module"></script>
 </body>
 </html>
+

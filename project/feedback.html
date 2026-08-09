@@ -1,149 +1,123 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>Feedback Submitted | Run Switzerland</title>
+	<title>Feedback Submitted | Run Switzerland</title>
 
-<meta name="description" content="Feedback submission confirmation for the Run Switzerland website.">
-<meta name="author" content="Thierry Stahl">
+	<meta name="description" content="Your feedback has been received by Run Switzerland. Thank you for helping improve our race finder and running resources.">
+	<meta name="author" content="Thierry Stahl">
 
-<meta property="og:title" content="Run Switzerland | Feedback Submitted">
-<meta property="og:description" content="Your feedback has been received by Run Switzerland.">
-<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
-<meta property="og:url" content="https://talionidas.github.io/wdd231/project/feedback.html">
-<meta property="og:type" content="website">
+	<meta property="og:title" content="Run Switzerland | Feedback Submitted">
+	<meta property="og:description" content="Your feedback has been received by Run Switzerland. Thank you for helping us improve your running experience.">
+	<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
+	<meta property="og:url" content="https://talionidas.github.io/wdd231/project/feedback.html">
+	<meta property="og:type" content="website">
 
-<link rel="icon" href="favicon_run.ico">
+	<link rel="icon" href="favicon_run.ico">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-```
-
+	<link rel="stylesheet" href="styles/small.css">
+	<link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
+	<header>
+		<div class="logo-container">
+			<a href="index.html">
+				<img
+					src="images/logo.png"
+					alt="Run Switzerland logo"
+					width="80"
+					height="80">
+			</a>
 
-<header>
+			<div>
+				<p class="site-title">Run Switzerland</p>
+				<p>Find Your Next Challenge</p>
+			</div>
+		</div>
 
-```
-<div class="logo-container">
+		<button
+			id="menuButton"
+			aria-label="Open Navigation Menu">
+			☰
+		</button>
 
-    <a href="index.html">
-        <img
-            src="images/logo.png"
-            alt="Run Switzerland logo"
-            width="80"
-            height="80">
-    </a>
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
 
-    <div>
-        <p class="site-title">Run Switzerland</p>
-        <p>Find Your Next Challenge</p>
-    </div>
+				<li>
+					<a href="races.html">
+						Race Finder
+					</a>
+				</li>
 
-</div>
+				<li>
+					<a href="guide.html">
+						Running Guide
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-<button
-    id="menuButton"
-    aria-label="Open Navigation Menu">
-    ☰
-</button>
+	<main>
+		<h1>Thank You!</h1>
 
-<nav>
+		<section>
+			<p>
+				Your feedback has been received.
+			</p>
 
-    <ul class="navigation">
+			<h2>Submitted Information</h2>
 
-        <li>
-            <a href="index.html">
-                Home
-            </a>
-        </li>
+			<div id="formResults"></div>
 
-        <li>
-            <a href="races.html">
-                Race Finder
-            </a>
-        </li>
+			<p>
+				<a href="races.html">Browse Races</a>
+			</p>
+		</section>
+	</main>
 
-        <li>
-            <a href="guide.html">
-                Running Guide
-            </a>
-        </li>
+	<footer>
+		<div class="footer-content">
+			<p>
+				&copy; <span id="currentyear"></span>
+				Run Switzerland |
+				Thierry Stahl |
+				Switzerland
+			</p>
 
-    </ul>
+			<p id="lastModified"></p>
 
-</nav>
-```
+			<nav class="footer-links">
+				<a href="attributions.html">
+					Attributions
+				</a>
 
-</header>
+				<span>|</span>
 
-<main>
+				<a
+					href="https://youtu.be/YOUR_VIDEO_ID"
+					target="_blank"
+					rel="noopener">
+					Project Demo
+				</a>
+			</nav>
+		</div>
+	</footer>
 
-```
-<h1>Thank You!</h1>
-
-<section>
-
-    <p>
-        Your feedback has been received.
-    </p>
-
-    <h2>Submitted Information</h2>
-
-    <div id="formResults"></div>
-
-</section>
-```
-
-</main>
-
-<footer>
-
-```
-<div class="footer-content">
-
-    <p>
-        &copy; <span id="currentyear"></span>
-        Run Switzerland |
-        Thierry Stahl |
-        Switzerland
-    </p>
-
-    <p id="lastModified"></p>
-
-    <nav class="footer-links">
-
-        <a href="attributions.html">
-            Attributions
-        </a>
-
-        <span>|</span>
-
-        <a
-            href="https://youtu.be/YOUR_VIDEO_ID"
-            target="_blank"
-            rel="noopener">
-            Project Demo
-        </a>
-
-    </nav>
-
-</div>
-```
-
-</footer>
-
-<script type="module" src="scripts/main.js"></script>
-
+	<script src="scripts/main.js" type="module"></script>
 </body>
 </html>
