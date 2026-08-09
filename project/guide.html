@@ -1,123 +1,142 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Run Switzerland | Running Guide</title>
 
-    <meta name="description" content="Learn about different race distances, running disciplines and find your next challenge with our running guide.">
-    <meta name="author" content="Thierry Stahl">
+<title>Run Switzerland | Running Guide</title>
 
-    <meta property="og:title" content="Run Switzerland">
-    <meta property="og:description" content="Some great running tips and race recommendations that go with them.">
-    <meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
-    <meta property="og:type" content="website">
+<meta name="description" content="Learn about different race distances, running disciplines and find your next challenge with our running guide.">
+<meta name="author" content="Thierry Stahl">
 
-    <link rel="icon" href="favicon_run.ico">
+<meta property="og:title" content="Run Switzerland | Running Guide">
+<meta property="og:description" content="Some great running tips and race recommendations that go with them.">
+<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
+<meta property="og:url" content="https://talionidas.github.io/wdd231/project/guide.html">
+<meta property="og:type" content="website">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon_run.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <script type="module" src="scripts/guide.js"></script>
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script type="module" src="scripts/guide.js"></script>
+
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo-container">
 
-        <a href="index.html">
-            <img src="images/logo.png" alt="Run Switzerland logo" width="80" height="80">
-        </a>
+<div class="logo-container">
 
-        <div>
-            <p class="site-title">Run Switzerland</p>
-            <p>Find Your Next Challenge</p>
-        </div>
+    <a href="index.html">
+        <img
+            src="images/logo.png"
+            alt="Run Switzerland logo"
+            width="80"
+            height="80">
+    </a>
 
+    <div>
+        <p class="site-title">Run Switzerland</p>
+        <p>Find Your Next Challenge</p>
     </div>
 
-    <button id="menuButton" aria-label="Open Navigation Menu">
-        ☰
-    </button>
+</div>
 
-    <nav>
+<button
+    id="menuButton"
+    aria-label="Open Navigation Menu">
+    ☰
+</button>
 
-        <ul class="navigation">
+<nav>
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="races.html">Race Finder</a></li>
-            <li><a class="active" href="guide.html">Running Guide</a></li>
+    <ul class="navigation">
 
-        </ul>
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
 
-    </nav>
+        <li>
+            <a href="races.html">
+                Race Finder
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="active"
+                href="guide.html">
+                Running Guide
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
 
 </header>
 
 <main>
 
-<section>
 
-    <h1>Running Guide</h1>
-
-    <p>
-        Whether you're preparing for your first race or planning your next marathon,
-        this guide will help you choose a suitable event and understand the different
-        types of races available in Switzerland.
-    </p>
-
-</section>
-
-<img
-    src="images/guide.webp"
-    alt="Runner training on a track"
-    loading="lazy"
-    width="800"
-    height="450">
-
-<section>
-
-<h2>Find Your Next Challenge</h2>
+<h1>Running Guide</h1>
 
 <p>
-    Enter the distance you covered during your Cooper Test (12-minute run).
-    Based on your result, we'll recommend race distances that may be suitable
-    for your current fitness level.
+    Whether you're preparing for your first race or planning your next marathon,
+    this guide will help you choose a suitable event and understand the different
+    types of races available in Switzerland.
 </p>
 
-<form id="fitnessForm">
+<section>
 
-    <label for="cooperDistance">
-        Distance completed in 12 minutes (meters)
-    </label>
+    <h2>Find Your Next Challenge</h2>
 
-    <input
-        type="number"
-        id="cooperDistance"
-        name="cooperDistance"
-        placeholder="Example: 2400"
-        min="1"
-        required>
+    <p>
+        Enter the distance you covered during your Cooper Test (12-minute run).
+        Based on your result, we'll recommend race distances that may be suitable
+        for your current fitness level.
+    </p>
 
-    <button type="submit" id="recommendButton">
-        Get Recommendation
-    </button>
+    <form id="fitnessForm">
 
-</form>
+        <label for="cooperDistance">
+            Distance completed in 12 minutes (meters)
+        </label>
 
-<div id="recommendationResult">
+        <input
+            type="number"
+            id="cooperDistance"
+            name="cooperDistance"
+            placeholder="Example: 2400"
+            min="1"
+            required>
 
-    <!-- Recommendation generated with JavaScript -->
+        <button
+            type="submit"
+            id="recommendButton">
+            Get Recommendation
+        </button>
 
-</div>
+    </form>
+
+    <div id="recommendationResult">
+        <!-- Recommendation generated with JavaScript -->
+    </div>
 
 </section>
 
@@ -181,7 +200,7 @@
 
         <article>
 
-            <h3>Family & Kids Events</h3>
+            <h3>Family &amp; Kids Events</h3>
 
             <p>
                 Shorter races designed to encourage participation from children
@@ -200,15 +219,25 @@
 
     <ul>
 
-        <li>Increase your weekly mileage gradually.</li>
+        <li>
+            Increase your weekly mileage gradually.
+        </li>
 
-        <li>Include easy recovery runs between harder workouts.</li>
+        <li>
+            Include easy recovery runs between harder workouts.
+        </li>
 
-        <li>Practice proper hydration and nutrition before race day.</li>
+        <li>
+            Practice proper hydration and nutrition before race day.
+        </li>
 
-        <li>Choose races that match both your fitness level and your goals.</li>
+        <li>
+            Choose races that match both your fitness level and your goals.
+        </li>
 
-        <li>Most importantly, enjoy the process and stay consistent.</li>
+        <li>
+            Most importantly, enjoy the process and stay consistent.
+        </li>
 
     </ul>
 
@@ -223,9 +252,11 @@
         We'd love to hear from you.
     </p>
 
-    <form method="get" action="form.html">
+    <form method="get" action="feedback.html">
 
-        <label for="name">Name</label>
+        <label for="name">
+            Name
+        </label>
 
         <input
             type="text"
@@ -233,7 +264,9 @@
             name="name"
             required>
 
-        <label for="email">Email</label>
+        <label for="email">
+            Email
+        </label>
 
         <input
             type="email"
@@ -241,7 +274,9 @@
             name="email"
             required>
 
-        <label for="subject">Subject</label>
+        <label for="subject">
+            Subject
+        </label>
 
         <input
             type="text"
@@ -249,7 +284,9 @@
             name="subject"
             required>
 
-        <label for="message">Message</label>
+        <label for="message">
+            Message
+        </label>
 
         <textarea
             id="message"
@@ -265,37 +302,41 @@
 
 </section>
 
+
 </main>
 
 <footer>
 
-    <div class="footer-content">
 
-        <p>
-            &copy; <span id="currentyear"></span>
-            Run Switzerland |
-            Thierry Stahl |
-            Switzerland
-        </p>
+<div class="footer-content">
 
-        <p id="lastModified"></p>
+    <p>
+        &copy; <span id="currentyear"></span>
+        Run Switzerland |
+        Thierry Stahl |
+        Switzerland
+    </p>
 
-        <nav class="footer-links">
+    <p id="lastModified"></p>
 
-            <a href="attributions.html">Attributions</a>
+    <nav class="footer-links">
 
-            <span>|</span>
+        <a href="attributions.html">
+            Attributions
+        </a>
 
-            <a
-                href="https://youtu.be/YOUR_VIDEO_ID"
-                target="_blank"
-                rel="noopener">
-                Project Demo
-            </a>
+        <span>|</span>
 
-        </nav>
+        <a
+            href="https://youtu.be/YOUR_VIDEO_ID"
+            target="_blank"
+            rel="noopener">
+            Project Demo
+        </a>
 
-    </div>
+    </nav>
+
+</div>
 
 </footer>
 

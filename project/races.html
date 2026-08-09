@@ -1,87 +1,117 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Run Switzerland | Race Finder</title>
 
-    <meta name="description" content="Browse running events throughout Switzerland using filters for distance, race type, region and month.">
-    <meta name="author" content="Thierry Stahl">
+<title>Run Switzerland | Race Finder</title>
 
-    <meta property="og:title" content="Run Switzerland">
-    <meta property="og:description" content="Discover interesting running events all across Switzerland.">
-    <meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
-    <meta property="og:type" content="website">
+<meta name="description" content="Browse running events throughout Switzerland using filters for distance, race type, region and month.">
+<meta name="author" content="Thierry Stahl">
 
-    <link rel="icon" href="favicon.ico">
+<meta property="og:title" content="Run Switzerland | Race Finder">
+<meta property="og:description" content="Discover running events across Switzerland and find your next race.">
+<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
+<meta property="og:url" content="https://talionidas.github.io/wdd231/project/races.html">
+<meta property="og:type" content="website">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon_run.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <script type="module" src="scripts/races.js"></script>
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script type="module" src="scripts/races.js"></script>
+
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo-container">
 
-        <a href="index.html">
-            <img src="images/logo.png" alt="Run Switzerland logo" width="80" height="80">
-        </a>
+<div class="logo-container">
 
-        <div>
-            <p class="site-title">Run Switzerland</p>
-            <p>Find Your Next Challenge</p>
-        </div>
+    <a href="index.html">
+        <img
+            src="images/logo.png"
+            alt="Run Switzerland logo"
+            width="80"
+            height="80">
+    </a>
 
+    <div>
+        <p class="site-title">Run Switzerland</p>
+        <p>Find Your Next Challenge</p>
     </div>
 
-    <button id="menuButton" aria-label="Open Navigation Menu">
-        ☰
-    </button>
+</div>
 
-    <nav>
+<button
+    id="menuButton"
+    aria-label="Open Navigation Menu">
+    ☰
+</button>
 
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="races.html">Race Finder</a></li>
-            <li><a href="guide.html">Running Guide</a></li>
-        </ul>
+<nav>
 
-    </nav>
+    <ul class="navigation">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="active"
+                href="races.html">
+                Race Finder
+            </a>
+        </li>
+
+        <li>
+            <a href="guide.html">
+                Running Guide
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
 
 </header>
 
 <main>
 
+
+<h1>Race Finder</h1>
+
+<p>
+    Search upcoming races across Switzerland and narrow your results
+    using the available filters.
+</p>
+
 <section>
 
-    <h1>Race Finder</h1>
-
-    <p>
-        Search upcoming races across Switzerland and narrow your results
-        using the available filters.
-    </p>
-
-</section>
-
-<section class="filter-section">
-
-    <h2>Search & Filter</h2>
+    <h2>Search &amp; Filter</h2>
 
     <div class="filter-grid">
 
         <div>
 
-            <label for="searchInput">Search</label>
+            <label for="searchInput">
+                Search
+            </label>
 
             <input
                 type="text"
@@ -92,16 +122,35 @@
 
         <div>
 
-            <label for="distanceFilter">Maximum Distance</label>
+            <label for="distanceFilter">
+                Maximum Distance
+            </label>
 
             <select id="distanceFilter">
 
-                <option value="all">All Distances</option>
-                <option value="5">Up to 5 km</option>
-                <option value="10">Up to 10 km</option>
-                <option value="21">Up to Half Marathon</option>
-                <option value="42">Up to Marathon</option>
-                <option value="100">Up to 100 km</option>
+                <option value="all">
+                    All Distances
+                </option>
+
+                <option value="5">
+                    Up to 5 km
+                </option>
+
+                <option value="10">
+                    Up to 10 km
+                </option>
+
+                <option value="21">
+                    Up to Half Marathon
+                </option>
+
+                <option value="42">
+                    Up to Marathon
+                </option>
+
+                <option value="100">
+                    Up to 100 km
+                </option>
 
             </select>
 
@@ -109,22 +158,55 @@
 
         <div>
 
-            <label for="categoryFilter">Race Category</label>
+            <label for="categoryFilter">
+                Race Category
+            </label>
 
             <select id="categoryFilter">
 
-                <option value="all">All Categories</option>
+                <option value="all">
+                    All Categories
+                </option>
 
-                <option>City Running</option>
-                <option>Running</option>
-                <option>Trail Running</option>
-                <option>Mountain Running</option>
-                <option>Obstacle Races</option>
-                <option>Relay</option>
-                <option>Waffenlauf</option>
-                <option>Women's Run</option>
-                <option>Family Race</option>
-                <option>Kids</option>
+                <option value="City Running">
+                    City Running
+                </option>
+
+                <option value="Running">
+                    Running
+                </option>
+
+                <option value="Trail Running">
+                    Trail Running
+                </option>
+
+                <option value="Mountain Running">
+                    Mountain Running
+                </option>
+
+                <option value="Obstacle Races">
+                    Obstacle Races
+                </option>
+
+                <option value="Relay">
+                    Relay
+                </option>
+
+                <option value="Waffenlauf">
+                    Waffenlauf
+                </option>
+
+                <option value="Women's Run">
+                    Women's Run
+                </option>
+
+                <option value="Family Race">
+                    Family Race
+                </option>
+
+                <option value="Kids">
+                    Kids
+                </option>
 
             </select>
 
@@ -132,21 +214,51 @@
 
         <div>
 
-            <label for="regionFilter">Region</label>
+            <label for="regionFilter">
+                Region
+            </label>
 
             <select id="regionFilter">
 
-                <option value="all">All Regions</option>
+                <option value="all">
+                    All Regions
+                </option>
 
-                <option>Central Switzerland</option>
-                <option>Eastern Switzerland</option>
-                <option>Zurich</option>
-                <option>Bern</option>
-                <option>Graubünden</option>
-                <option>Valais</option>
-                <option>Ticino</option>
-                <option>Lake Geneva</option>
-                <option>Northwestern Switzerland</option>
+                <option value="Central Switzerland">
+                    Central Switzerland
+                </option>
+
+                <option value="Eastern Switzerland">
+                    Eastern Switzerland
+                </option>
+
+                <option value="Zurich">
+                    Zurich
+                </option>
+
+                <option value="Bern">
+                    Bern
+                </option>
+
+                <option value="Graubünden">
+                    Graubünden
+                </option>
+
+                <option value="Valais">
+                    Valais
+                </option>
+
+                <option value="Ticino">
+                    Ticino
+                </option>
+
+                <option value="Lake Geneva">
+                    Lake Geneva
+                </option>
+
+                <option value="Northwestern Switzerland">
+                    Northwestern Switzerland
+                </option>
 
             </select>
 
@@ -154,24 +266,28 @@
 
         <div>
 
-            <label for="monthFilter">Month</label>
+            <label for="monthFilter">
+                Month
+            </label>
 
             <select id="monthFilter">
 
-                <option value="all">All Months</option>
+                <option value="all">
+                    All Months
+                </option>
 
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
 
             </select>
 
@@ -179,15 +295,31 @@
 
         <div>
 
-            <label for="elevationFilter">Elevation Gain</label>
+            <label for="elevationFilter">
+                Elevation Gain
+            </label>
 
             <select id="elevationFilter">
 
-                <option value="all">Any Elevation</option>
-                <option value="500">Below 500 m</option>
-                <option value="1000">Below 1000 m</option>
-                <option value="2000">Below 2000 m</option>
-                <option value="2001">2000+ m</option>
+                <option value="all">
+                    Any Elevation
+                </option>
+
+                <option value="500">
+                    Below 500 m
+                </option>
+
+                <option value="1000">
+                    Below 1000 m
+                </option>
+
+                <option value="2000">
+                    Below 2000 m
+                </option>
+
+                <option value="2001">
+                    2000+ m
+                </option>
 
             </select>
 
@@ -207,7 +339,9 @@
 
     </div>
 
-    <div id="raceContainer" class="race-grid">
+    <div
+        id="raceContainer"
+        class="race-grid">
 
         <!-- JavaScript inserts race cards here -->
 
@@ -215,61 +349,60 @@
 
 </section>
 
-<dialog id="raceDialog">
-
-    <button id="closeDialog">
-        ✕
-    </button>
-
-    <div id="dialogContent"></div>
-
-</dialog>
-
-<dialog id="raceModal">
-
-    <button id="closeModal" aria-label="Close dialog">
-        ✕
-    </button>
-
-    <div id="modalContent">
-
-        <!-- Filled dynamically -->
-
-    </div>
-
-</dialog>
 
 </main>
 
+<dialog id="raceDialog">
+
+
+<button
+    id="closeDialog"
+    aria-label="Close race details">
+    ✕
+</button>
+
+<div id="dialogContent">
+
+    <!-- Race details are inserted dynamically -->
+
+</div>
+
+
+</dialog>
+
 <footer>
 
-    <div class="footer-content">
 
-        <p>
-            &copy; <span id="currentyear"></span>
-            Run Switzerland |
-            Thierry Stahl |
-            Switzerland
-        </p>
+<div class="footer-content">
 
-        <p id="lastModified"></p>
+    <p>
+        &copy; <span id="currentyear"></span>
+        Run Switzerland |
+        Thierry Stahl |
+        Switzerland
+    </p>
 
-        <nav class="footer-links">
+    <p id="lastModified"></p>
 
-            <a href="attributions.html">Attributions</a>
+    <nav class="footer-links">
 
-            <span>|</span>
+        <a href="attributions.html">
+            Attributions
+        </a>
 
-            <a
-                href="https://youtu.be/YOUR_VIDEO_ID"
-                target="_blank"
-                rel="noopener">
-                Project Demo
-            </a>
+        <span>|</span>
 
-        </nav>
+        <a
+            href="https://youtu.be/YOUR_VIDEO_ID"
+            target="_blank"
+            rel="noopener">
+            Project Demo
+        </a>
 
-    </div>
+    </nav>
+
+</div>
+
 
 </footer>
 

@@ -1,61 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Feedback Submitted | Run Switzerland</title>
+```
+<title>Feedback Submitted | Run Switzerland</title>
 
-    <meta name="description" content="Feedback submission confirmation for Run Switzerland.">
+<meta name="description" content="Feedback submission confirmation for the Run Switzerland website.">
+<meta name="author" content="Thierry Stahl">
 
-    <meta name="author" content="Thierry Stahl">
+<meta property="og:title" content="Run Switzerland | Feedback Submitted">
+<meta property="og:description" content="Your feedback has been received by Run Switzerland.">
+<meta property="og:image" content="https://talionidas.github.io/wdd231/project/images/logo.png">
+<meta property="og:url" content="https://talionidas.github.io/wdd231/project/feedback.html">
+<meta property="og:type" content="website">
 
+<link rel="icon" href="favicon_run.ico">
 
-    <link rel="icon" href="images/favicon_run.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="styles/small.css">
-
-    <link rel="stylesheet" href="styles/larger.css">
-
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+```
 
 </head>
 
-
 <body>
-
 
 <header>
 
-    <p class="site-title">Run Switzerland</p>
+```
+<div class="logo-container">
 
-    <p>
-        Find your next running challenge
-    </p>
+    <a href="index.html">
+        <img
+            src="images/logo.png"
+            alt="Run Switzerland logo"
+            width="80"
+            height="80">
+    </a>
 
+    <div>
+        <p class="site-title">Run Switzerland</p>
+        <p>Find Your Next Challenge</p>
+    </div>
 
-</header>
+</div>
 
-
+<button
+    id="menuButton"
+    aria-label="Open Navigation Menu">
+    ☰
+</button>
 
 <nav>
 
-    <button id="menuButton">
-        ☰
-    </button>
-
-
-    <ul id="navigation">
+    <ul class="navigation">
 
         <li>
             <a href="index.html">
@@ -65,7 +70,7 @@
 
         <li>
             <a href="races.html">
-                Race Calendar
+                Race Finder
             </a>
         </li>
 
@@ -77,96 +82,68 @@
 
     </ul>
 
-
 </nav>
+```
 
-
+</header>
 
 <main>
 
+```
+<h1>Thank You!</h1>
 
-<section class="confirmation">
-
-
-    <h1>
-        Thank You!
-    </h1>
-
+<section>
 
     <p>
         Your feedback has been received.
     </p>
 
+    <h2>Submitted Information</h2>
 
-    <h3>
-        Submitted Information
-    </h3>
-
-
-    <div id="formResults">
-
-    </div>
-
+    <div id="formResults"></div>
 
 </section>
-
+```
 
 </main>
 
-
-
 <footer>
 
+```
+<div class="footer-content">
+
     <p>
-        &copy; 2026 Thierry Stahl | Run Switzerland
+        &copy; <span id="currentyear"></span>
+        Run Switzerland |
+        Thierry Stahl |
+        Switzerland
     </p>
 
+    <p id="lastModified"></p>
 
-    <p>
+    <nav class="footer-links">
+
         <a href="attributions.html">
             Attributions
         </a>
-    </p>
 
+        <span>|</span>
+
+        <a
+            href="https://youtu.be/YOUR_VIDEO_ID"
+            target="_blank"
+            rel="noopener">
+            Project Demo
+        </a>
+
+    </nav>
+
+</div>
+```
 
 </footer>
 
-
-
-<script type="module">
-
-const results = document.querySelector("#formResults");
-
-const params = new URLSearchParams(
-    window.location.search
-);
-
-
-results.innerHTML = `
-
-    <p>
-        <strong>Name:</strong>
-        ${params.get("name")}
-    </p>
-
-
-    <p>
-        <strong>Email:</strong>
-        ${params.get("email")}
-    </p>
-
-
-    <p>
-        <strong>Message:</strong>
-        ${params.get("message")}
-    </p>
-
-`;
-
-</script>
-
-
+<script type="module" src="scripts/main.js"></script>
 
 </body>
-
 </html>
